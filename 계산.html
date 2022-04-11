@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title> calc </title>
+		<link rel="stylesheet" href="계산.css">
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td colspan="4">
+				<input type="text" id="result">
+				</td>
+			</tr>
+			<tr>
+				<td style="background-color : red" colspan="3"  onclick="inp('AC')" >AC</td>
+				<td class="q" onclick="inp('*')">*</td>
+			</tr>
+			<tr>
+				<td onclick="inp(1)">1</td>
+				<td onclick="inp(2)">2</td>
+				<td onclick="inp(3)">3</td>
+				<td class="q" onclick="inp('/')">/</td>
+			</tr>
+			<tr>
+				<td onclick="inp(4)">4</td>
+				<td onclick="inp(5)">5</td>
+				<td onclick="inp(6)">6</td>
+				<td class="q" onclick="inp('+')">+</td>
+			</tr>
+			<tr>
+				<td onclick="inp(7)">7</td>
+				<td onclick="inp(8)">8</td>
+				<td onclick="inp(9)">9</td>
+				<td class="q" onclick="inp('-')">-</td>
+			</tr>
+			<tr>
+				<td onclick="inp(0)">0</td>
+				<td onclick="inp('.')">.</td>
+				<td style="background-color : yellow" colspan="2" onclick="calc()">=</td>
+			</tr>
+		</table>
+		<script>
+		function inp(c) {
+			var result = document.getElementById('result');
+			if(c=='AC')
+			{
+				result.value=0;
+			}
+			else 
+				result.value = result.value + c;
+		}
+		function calc(){
+			var result = document.getElementById('result');
+			var sum;
+			sum=eval(result.value);
+			result.value=sum;
+		}
+		</script>
+	</body>
+</html>

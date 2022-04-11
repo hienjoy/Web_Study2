@@ -1,0 +1,19 @@
+*{
+	color : white;
+}
+body{
+	background-color : pink;
+}
+.clock{
+	width : 400px;
+	border : 10px dashed white;
+	border-radius : 10px;
+	margin : auto;
+	text-align : center;
+}
+
+.nowtime{
+	text-align : center;
+	font-size : 50px;
+	padding : 50px;
+}

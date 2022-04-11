@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title> colorchange </title>
+		<style>
+			.redb{
+				width : 100px;
+				height : 100px;
+				background-color : red;
+				
+			}
+			.blueb{
+				width : 100px;
+				height : 100px;
+				background-color : blue;
+				
+			}
+			.greenb{
+				width : 100px;
+				height : 100px;
+				background-color : green;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<span style="display:inline-block" class="redb" onmouseover="changer()"></span>
+			<span style="display:inline-block" class="blueb" onmouseover="changeb()"></span>
+			<span style="display:inline-block" class="greenb" onmouseover="changeg()"></span>
+		</div>
+		<script>
+			function changer(){
+				document.body.style.backgroundColor="red";
+			}
+			function changeb(){
+				document.body.style.backgroundColor="blue";
+			}
+			function changeg(){
+				document.body.style.backgroundColor="green";
+			}
+		</script>
+	</body>
+</html>

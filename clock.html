@@ -1,0 +1,26 @@
+<html>
+	<head> 
+		<title> clock </title>
+		<link rel="stylesheet" href="clock.css">
+	</head>
+	<body>
+		<div class='nowtime'> <strong> 현재 시간 <strong> </div>
+		<div class="clock">
+			<h1 id="time"> </h1>
+		</div>
+		<script>
+			var h1 = document.getElementById("time");
+			function getTime(){
+				var date=new Date()
+				var hour = date.getHours();
+				var min = date.getMinutes();
+				var sec = date.getSeconds(); 
+				var time=`${hour}시 ${min}분 ${sec}초`;
+				h1.textContent =time;
+			}
+			getTime()
+			setInterval(getTime,1000)
+			
+		</script>
+	</body>
+</html>

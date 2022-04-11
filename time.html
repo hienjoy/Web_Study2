@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title> time </title>
+	</head>
+	<body>
+		<script>
+			var id= setInterval(function(){
+				alert("3초마다 실행합니다");
+			},3000);
+			
+			setTimeout(function(){
+				clearInterval(id);
+			},7000);
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--html>
+	<head>
+		<title> time </title>
+	</head>
+	<body>
+		<script>
+			alert("start time out");
+			var id=setTimeout(function(){
+				alert("3초가 지났습니다");
+			},1000);
+			clearTimeout(id);
+		</script>
+	</body>
+</html>

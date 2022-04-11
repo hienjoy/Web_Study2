@@ -1,0 +1,19 @@
+table {
+	width : 400px;
+	height :600px;
+    border: 1px solid black;
+	font-size : 40px;
+}
+td{
+    text-align: center;
+	border: 1px solid black;
+}
+input {
+	width : 300px;
+	font-size: 30px;
+    text-align: right;
+    border: none;
+}
+.q{
+	background-color: orange;
+}
